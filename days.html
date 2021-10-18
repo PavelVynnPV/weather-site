@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>WEATHER FORECAST</h1>
+    <div id="block_search">
+        <form>
+            <div class="input-field">
+                <input id="search" type="text" placeholder="Poltava" required>
+            </div>
+        </form>
+        <button id="searchCity">search</button>
+    </div>
+</header>
+<nav>
+    <div class="nav-wrapper">
+
+        <div class="today">
+            <a href="index.html">Today</a>
+        </div>
+
+        <div class="five-day">
+            <a href="#">5-day forecast</a>
+        </div>
+
+    </div>
+</nav>
+
+<section class="firstSection">
+    <div class="container">
+        <div class="forecastNone">
+            <h3 class="h3Forecast">5-Day Forecast</h3>
+        </div>
+        <div class="row daily-blocks">
+            <div class="col m2 s12">
+                <ul class="current-daily-block fourDaily-block currentHourly">
+                    <li><h4 class="show-current-day"></h4></li>
+                    <li class="month-li"><span class="month-span"></span><span class="date-span"></span></li>
+                    <li class="show-current-icon"></li>
+                    <li class="show-current-temp"></li>
+                    <li class="show-current-desc"></li>
+                </ul>
+                </div>
+            <div class="col m2 s12">
+                <ul class="current-fourDaily-block-first firstHourly fourDaily-block">
+                    <li><h4 class="show-day"></h4></li>
+                    <li class="month-li"><span class="month-span"></span><span class="date-span-first"></span></li>
+                    <li class="show-icon"></li>
+                    <li class="show-temp"></li>
+                    <li class="show-desc"></li>
+                </ul>
+            </div>
+            <div class="col m2 s12">
+                <ul class="current-fourDaily-block-second secondHourly fourDaily-block">
+                    <li><h4 class="show-second-day"></h4></li>
+                    <li class="month-li"><span class="month-span"></span><span class="date-span-second"></span></li>
+                    <li class="show-second-icon"></li>
+                    <li class="show-second-temp"></li>
+                    <li class="show-second-desc"></li>
+                </ul>
+            </div>
+            <div class="col m2 s12">
+                <ul class="current-fourDaily-block-third thirdHourly fourDaily-block">
+                    <li><h4 class="show-third-day"></h4></li>
+                    <li class="month-li"><span class="month-span"></span><span class="date-span-third"></span></li>
+                    <li class="show-third-icon"></li>
+                    <li class="show-third-temp"></li>
+                    <li class="show-third-desc"></li>
+                </ul>
+            </div>
+            <div class="col m2 s12">
+                <ul class="current-fourDaily-block-fourth fourthHourly fourDaily-block">
+                    <li><h4 class="show-fourth-day"></h4></li>
+                    <li class="month-li"><span class="month-span"></span><span class="date-span-fourth"></span></li>
+                    <li class="show-fourth-icon"></li>
+                    <li class="show-fourth-temp"></li>
+                    <li class="show-fourth-desc"></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="secondSection">
+    <div class="container">
+        <div class="row">
+
+            <div class="col m12 s12">
+                <div class="headSection">
+                    <h5>HOURLY</h5>
+                </div>
+            </div>
+
+            <div class="row hourlyWeatherBlock">
+
+                <div class="col m2 s12">
+                    <h4 class="hourlyDay">Your Day</h4>
+                    <ul class="infoFirstHourly">
+                        <li class="info_weather_hourly"><span class="blackForecast">Forecast</span></li>
+                        <li class="info_weather_hourly"><span class="blackForecast">Temp(&degC)</span></li>
+                        <li class="info_weather_hourly"><span class="blackForecast">RealFeel</span></li>
+                        <li class="info_weather_hourly"><span class="blackForecast">Wind (km/h)</span></li>
+                    </ul>
+                </div>
+                <div class="col m9 s12 infoHourly"></div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+</section>
+
+<section class="error404">
+    <div class="col m12 s12">
+        <div class="row">
+            <div class="error">
+                <img src="img/pchelka.png" alt="">
+                <h1 id="h1-error">Упс, ошибочка....</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="js/days.js"></script>
+</body>
+</html>

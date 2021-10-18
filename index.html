@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WF</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" href="img/cloudy-day.png">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>WEATHER FORECAST</h1>
+    <div id="block_search">
+    <form>
+        <div class="input-field">
+                <input id="search" type="text" placeholder="Poltava" required>
+        </div>
+    </form>
+    <button id="searchCity">search</button>
+    </div>
+</header>
+<nav>
+    <div class="nav-wrapper">
+
+        <div class="today">
+        <a href="#">Today</a>
+        </div>
+
+        <div class="five-day">
+        <a href="days.html">5-day forecast</a>
+        </div>
+
+    </div>
+</nav>
+
+
+    <section class="firstSection">
+        <div class="container">
+            <div class="row">
+
+                <div class="col m12 s12">
+                    <div class="headSection">
+                        <h5>CURRENT WEATHER</h5>
+                        <div id="data"></div>
+                    </div>
+                </div>
+
+                <div class="container weatherBlock">
+                    <div class="col m4 s12">
+                            <div class="sunny blockFirstSec"></div>
+                    </div>
+
+                    <div class="col m4 s12">
+                        <div class="degrees blockFirstSec"></div>
+                    </div>
+
+                    <div class="col m4 s12">
+                        <div class="infoWeather blockFirstSec"></div>
+                    </div>
+                </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--SECOND SEC-->
+
+    <section class="secondSection">
+        <div class="container">
+            <div class="row">
+
+                <div class="col m12 s12">
+                    <div class="headSection">
+                        <h5>HOURLY</h5>
+                    </div>
+                </div>
+
+                <div class="row hourlyWeatherBlock">
+                    <div class="col m2 s12">
+                        <h4>Today</h4>
+                        <ul class="infoFirstHourly">
+                            <li class="info_weather_hourly"><span class="blackForecast">Forecast</span></li>
+                            <li class="info_weather_hourly"><span class="blackForecast">Temp(&degC)</span></li>
+                            <li class="info_weather_hourly"><span class="blackForecast">RealFeel</span></li>
+                            <li class="info_weather_hourly"><span class="blackForecast">Wind (km/h)</span></li>
+                        </ul>
+                    </div>
+                    <div class="col m9 s12 infoHourly">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <section class="thirdSection">
+        <div class="container">
+            <div class="row">
+
+                <div class="col m12 s12">
+                    <div class="headSection">
+                        <h5>Places Nearby</h5>
+                    </div>
+                </div>
+                <div class="container placesFlex">
+                    <div class="container weatherBlock">
+                        <div class="col m4 s12">
+                            <div class="firstPlace places">1</div>
+                            <div class="secondPlace places">2</div>
+                        </div>
+                    </div>
+
+                    <div class="container weatherBlock">
+                        <div class="col m4 s12">
+                            <div class="thirdPlace places">3</div>
+                            <div class="fourthPlace places">4</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="error404">
+    <div class="col m12 s12">
+        <div class="row">
+            <div class="error">
+                <img src="img/pchelka.png" alt="">
+                <h1 id="h1-error">Упс, ошибочка....</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<script src="js/script.js"></script>
+<script src="js/all.js"></script>
+</body>
+</html>
